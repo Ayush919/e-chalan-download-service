@@ -1,5 +1,5 @@
-const User = require('../models/userModel');
-const { formatUserResponse } = require('../helpers/userHelper');
+const User = require('../models/e-chalan');
+const { formatUserResponse } = require('../helper/e-chalan');
 const {uploadNewChalanRequest} = require("../helper/e-chalan");
 
 const getAllUsers = async (req, res) => {
