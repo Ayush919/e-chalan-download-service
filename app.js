@@ -7,6 +7,8 @@ let eChalan = require('./routes/e-chalan');
 let shops = require('./routes/shops');
 let products = require('./routes/products');
 let auth = require('./routes/auth');
+require('dotenv').config();
+
 
 
 let app = express();

@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const Admin = require("../models/adminAuth");
-const SECRET_KEY = 'secret-e-chalan-freelance-admin-key';
+const SECRET_KEY = process.env.SECRET_KEY;
 
 function generateToken(payload) {
     return jwt.sign(payload, SECRET_KEY, {expiresIn: '1hr'});
