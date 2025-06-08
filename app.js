@@ -1,5 +1,6 @@
 let express = require('express');
 let path = require('path');
+require('dotenv').config();
 const cors = require('cors');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
@@ -7,7 +8,6 @@ let eChalan = require('./routes/e-chalan');
 let shops = require('./routes/shops');
 let products = require('./routes/products');
 let auth = require('./routes/auth');
-require('dotenv').config();
 
 
 

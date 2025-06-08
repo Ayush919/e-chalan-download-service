@@ -3,6 +3,7 @@ const Admin = require("../models/adminAuth");
 const SECRET_KEY = process.env.SECRET_KEY;
 
 function generateToken(payload) {
+    console.log(payload,SECRET_KEY);
     return jwt.sign(payload, SECRET_KEY, {expiresIn: '1hr'});
 }
 
