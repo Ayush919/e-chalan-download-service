@@ -10,7 +10,7 @@ async function createProduct(req, res) {
 }
 
 async function getAllProductsWithoutRate() {
-    return await Product.find({}, {rate: 0});  // Exclude 'rate'
+    return await Product.find({});  // Exclude 'rate'
 }
 
 module.exports = {createProduct, getAllProductsWithoutRate};
