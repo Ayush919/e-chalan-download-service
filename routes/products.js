@@ -3,7 +3,7 @@ const router = express.Router();
 const {addProduct, getProducts} = require('../controller/products');
 const verifyAuth = require('../middleware/authmiddleware');
 
-router.post('/products', verifyAuth, addProduct);
-router.get('/products', getProducts);
+router.post('/addProducts', addProduct);
+router.get('/productDetails', getProducts);
 
 module.exports = router;
